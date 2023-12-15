@@ -2,10 +2,10 @@
 
 packaging_format = 2
 
-id = "example"
-name = "Example app"
-description.en = "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)"
-description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+id = "peercalls"
+name = "Peer-Calls"
+description.en = "Group peer-to-peer calls for everyone"
+description.fr = "Appels de groupe peer-to-peer pour tout le monde"
 
 version = "4.2.2~ynh1"
 
@@ -64,9 +64,11 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/foo/bar/archive/refs/tags/v1.2.3.tar.gz"
-        sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-    autoupdate.strategy = "latest_github_tag"
+        in_subdir = false
+        rename = "peercalls"
+        url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.2/peercalls.linux.amd64.v4.2.2.tar.gz"
+        sha256 = "1252eafc647e3306346f29a94756f33b65bb97a0da6ff9d5fa2035192092b42d"
+        autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 

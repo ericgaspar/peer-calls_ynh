@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Peer-Calls: 
 After=network.target
 
 [Service]
