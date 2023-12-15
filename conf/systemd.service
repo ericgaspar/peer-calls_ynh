@@ -6,10 +6,9 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
+Environment=PEERCALLS_BIND_PORT=__PORT__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+ExecStart=__INSTALL_DIR__/peercalls
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
