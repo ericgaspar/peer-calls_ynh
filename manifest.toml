@@ -48,8 +48,12 @@ ram.runtime = "50M"
         extract = false
         in_subdir = false
         rename = "peercalls"
-        amd64.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.2/peercalls.linux.amd64.v4.2.2.tar.gz"
-        amd64.sha256 = "1252eafc647e3306346f29a94756f33b65bb97a0da6ff9d5fa2035192092b42d"
+
+        amd64.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.0/peercalls.linux.amd64.v4.2.0.tar.gz"
+        amd64.sha256 = "0c4e252255d33b281120dbb687e32b7df98e100404948a6accdf958b0b677071"
+
+        # amd64.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.2/peercalls.linux.amd64.v4.2.2.tar.gz"
+        # amd64.sha256 = "1252eafc647e3306346f29a94756f33b65bb97a0da6ff9d5fa2035192092b42d"
         armhf.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.2/peercalls.linux.arm.v4.2.2.tar.gz"
         armhf.sha256 = "01b817309e755fd38616120e682bff8871917aa5764388a66d3e0c49c674039c"
         autoupdate.strategy = "latest_github_tag"
