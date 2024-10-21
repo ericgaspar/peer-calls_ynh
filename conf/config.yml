@@ -1,11 +1,11 @@
-base_url: 'https://__DOMAIN__'
+base_url: '__PATH__'
 bind_host: '127.0.0.1'
 bind_port: __PORT__
-ice_servers:
- - urls:
-   - 'stun:stun.l.google.com:19302'
-- urls:
-  - 'stun:global.stun.twilio.com:3478?transport=udp'
+#ice_servers:
+# - urls:
+#   - 'stun:stun.l.google.com:19302'
+#- urls:
+#  - 'stun:global.stun.twilio.com:3478?transport=udp'
 #- urls:
 #  - 'turn:coturn.mydomain.com'
 #  auth_type: secret
