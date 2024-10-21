@@ -7,13 +7,12 @@ name = "Peer-calls"
 description.en = "Group peer to peer video calls for everyone"
 description.fr = "Appels vidéo de groupe peer to peer pour tout le monde"
 
-version = "1.0~ynh1"
+version = "4.2.7~ynh1"
 
 maintainers = ["eric_G"]
 
 [upstream]
 license = " Apache-2.0"
-website = "https://example.com"
 demo = "https://peercalls.com/"
 code = "https://github.com/peer-calls/peer-calls"
 
@@ -49,11 +48,12 @@ ram.runtime = "50M"
     [resources.sources.main]
     in_subdir = false
     extract = true
-    rename = "peercalls"
-    url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.7/peercalls.linux.amd64.v4.2.7.tar.gz"
-    sha256 = "2a540502018c10fc391906c2ca6ccc377e2de47636becd13db66518a37e65164"
+    amd64.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.7/peercalls.linux.amd64.v4.2.7.tar.gz"
+    amd64.sha256 = "2a540502018c10fc391906c2ca6ccc377e2de47636becd13db66518a37e65164"
+    armhf.url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.7/peercalls.linux.arm.v4.2.7.tar.gz"
+    armhf.ha256 = "9ebd035ed4a9384dce0d4a11e4d085f5cc948d42171aafd00da729f8ccb9f8e5"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
