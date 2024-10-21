@@ -43,7 +43,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    #in_subdir = false
+    in_subdir = false
     #extract = true
     rename = "peercalls"
     url = "https://github.com/peer-calls/peer-calls/releases/download/v4.2.7/peercalls.linux.amd64.v4.2.7.tar.gz"
